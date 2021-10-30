@@ -7,6 +7,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Services></Services>
+
             <div style={{ height: '200px' }}>
                 <h2>Extra-1 :: (User-Review, Why-with-Us, -Accordion)</h2>
             </div>
