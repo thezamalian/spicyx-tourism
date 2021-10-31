@@ -16,19 +16,22 @@ const MyPackages = () => {
     }, [user.email]);
 
     const handleDelete = id => {
-        // const confirm = 
-        const url = `http://localhost:5000/packages/${id}`
-        fetch(url, {
-            method: 'DELETE'
-        })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                if (data.deletedCount) {
-                    const remaining = myPacks.filter(pack => pack._id !== id);
-                    setMyPacks(remaining);
-                }
+        const proceed = window.confirm('Are you sure?');
+        if (proceed) {
+            const url = `http://localhost:5000/packages/${id}`
+            fetch(url, {
+                method: 'DELETE'
             })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    if (data.deletedCount) {
+                        const remaining = myPacks.filter(pack => pack._id !== id);
+                        setMyPacks(remaining);
+                    }
+                })
+        }
+
     }
 
 
@@ -51,7 +54,9 @@ const MyPackages = () => {
                             <p>{pack.user.name} </p>
                             <p>Status: Pending {" "}</p>
 
-                            <button onClick={() => handleDelete(pack._id)} className='btn text-danger w-25'>X</button>
+                            <div className='w-25'>
+                                <button onClick={() => handleDelete(pack._id)} className='btn btn-danger '>Delete</button>
+                            </div>
                         </div>
                     </li>)
                 }
