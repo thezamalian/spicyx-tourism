@@ -6,7 +6,7 @@ const Services = () => {
         <div className='mt-5 mx-3'>
             <h2 className='mb-3 '>Best Packages for You</h2>
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
                 <SingleService></SingleService>
                 <SingleService></SingleService>

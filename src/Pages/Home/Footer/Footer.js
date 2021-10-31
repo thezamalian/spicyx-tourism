@@ -5,34 +5,37 @@ const Footer = () => {
     return (
         <div>
 
-            <div class="container">
-                <footer class="py-5">
-                    <div class="row">
-                        <div class="col-6">
-                            <h2>SpicyX Tourism</h2>
+            <div className="container">
+                <footer className="py-5">
+                    <div className="row">
+                        <div className="col-6 ">
+                            <Link to="/" style={{ textDecoration: 'none' }}>
+                                <h2>SpicyX Tourism</h2>
+                            </Link>
                         </div>
-                        <div class="col-6">
-                            <ul class="nav flex">
-                                <li class="nav-item mb-2 mx-2"><Link to="/" class="nav-link p-0 text-muted">Home </Link></li>
-                                <li class="nav-item mb-2 mx-2"><Link to="/" class="nav-link p-0 text-muted">Packages </Link></li>
-                                <li class="nav-item mb-2 mx-2"><Link to="/" class="nav-link p-0 text-muted">Pricing </Link></li>
-                                <li class="nav-item mb-2 mx-2"><Link to="/" class="nav-link p-0 text-muted">FAQs </Link></li>
-                                <li class="nav-item mb-2 mx-2"><Link to="/" class="nav-link p-0 text-muted">About</Link></li>
+
+                        <div className="col-6">
+                            <ul className="list-unstyled nav flex">
+                                <li className="nav-item mb-2 mx-2"><Link to="/" className="nav-link p-0">Home </Link></li>
+                                <li className="nav-item mb-2 mx-2"><Link to="/" className="nav-link p-0">Packages </Link></li>
+                                <li className="nav-item mb-2 mx-2"><Link to="/" className="nav-link p-0">Pricing </Link></li>
+                                <li className="nav-item mb-2 mx-2"><Link to="/" className="nav-link p-0">FAQs </Link></li>
+                                <li className="nav-item mb-2 mx-2"><Link to="/" className="nav-link p-0">About</Link></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-center py-4 my-4 border-top">
+                    <div className="d-flex justify-content-center py-4 my-4 border-top">
                         <p>&copy; 2021 SpicyX, Inc. All rights reserved.</p>
 
-                        {/* <ul class="list-unstyled d-flex">
-                            <li class="ms-3"><Link class="link-dark" to="/"><svg class="bi" width="24" height="24">
+                        {/* <ul className="list-unstyled d-flex">
+                            <li className="ms-3"><Link className="link-dark" to="/"><svg className="bi" width="24" height="24">
                                 <use xlink:href="#twitter" />
                             </svg></Link></li>
-                            <li class="ms-3"><Link class="link-dark" to="/"><svg class="bi" width="24" height="24">
+                            <li className="ms-3"><Link className="link-dark" to="/"><svg className="bi" width="24" height="24">
                                 <use xlink:href="#instagram" />
                             </svg></Link></li>
-                            <li class="ms-3"><Link class="link-dark" to="/"><svg class="bi" width="24" height="24">
+                            <li className="ms-3"><Link className="link-dark" to="/"><svg className="bi" width="24" height="24">
                                 <use xlink:href="#facebook" />
                             </svg></Link></li>
                         </ul> */}

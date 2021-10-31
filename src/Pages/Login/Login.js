@@ -23,28 +23,28 @@ const Login = () => {
         >
             <form className='w-50 bg-light p-3 mx-auto rounded my-3'>
 
-                <h1 class="h3 mb-3 fw-normal">Please Login</h1>
+                <h1 className="h3 mb-3 fw-normal">Please Login</h1>
 
-                <div class="form-floating ">
-                    <input type="email" class="form-control mb-2 " id="floatingInput" placeholder="" />
+                <div className="form-floating ">
+                    <input type="email" className="form-control mb-2 " id="floatingInput" placeholder="" />
                     <label for="floatingInput">Email address</label>
                 </div>
-                <div class="form-floating">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="" />
+                <div className="form-floating">
+                    <input type="password" className="form-control" id="floatingPassword" placeholder="" />
                     <label for="floatingPassword">Password</label>
                 </div>
 
-                <div class="checkbox mb-3">
+                <div className="checkbox mb-3">
                     <label>
                         <input type="checkbox" value="remember-me" /> Remember me
                     </label>
                 </div>
-                <button class="w-50 btn btn-lg btn-success " type="submit" disabled>Sign in</button>
+                <button className="w-50 btn btn-lg btn-success " type="submit" disabled>Sign in</button>
 
 
             </form>
             <div className='w-50 mx-auto'>
-                <button onClick={handleSignInWithGoogle} class="w-50 btn btn-lg btn-warning mx-auto" type="submit">Continue with Google</button>
+                <button onClick={handleSignInWithGoogle} className="w-50 btn btn-lg btn-warning mx-auto" type="submit">Continue with Google</button>
             </div>
 
         </div>

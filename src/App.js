@@ -8,7 +8,6 @@ import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import AddPackage from './Pages/Packages/AddPackage/AddPackage';
 import AllBookedPackages from './Pages/Packages/AllBookedPackages/AllBookedPackages';
-import AllPackages from './Pages/Packages/AllPackages/AllPackages';
 import MyPackages from './Pages/Packages/MyPackages/MyPackages';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
