@@ -12,7 +12,7 @@ const UserReview = () => {
                             <img width="80px" className='mx-auto' src="https://www.tourx-react.egenslab.com/static/media/reviewer-1.07859027.png" alt="" />
                             <h3>Destiny Yes</h3>
                             <h4 className='text-muted'>Traveller</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime aut ut voluptate dolorum nisi ducimus ratione</p>
+                            <p>Apart from Scotland landmark, the Old Man of Stor, the Quiraing is a must for anyone who visits Isle of Skye; especially if you’re a travel photographer!</p>
                         </div>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ const UserReview = () => {
                             <img width="80px" className='mx-auto rounded-pill' src="https://www.tourx-react.egenslab.com/static/media/reviewer-3.21d99f5c.png" alt="" />
                             <h3>David log</h3>
                             <h4 className='text-muted'>Traveller</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime aut ut voluptate dolorum nisi ducimus ratione</p>
+                            <p>Apart from Scotlands landmark, the Old Man of Storr, the Quiraing is a must for anyone who visits Isle of Skye; especially if you’re a travel photographer!</p>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@ const UserReview = () => {
                             <img width="80px" className='mx-auto rounded-pill' src="https://www.tourx-react.egenslab.com/static/media/reviewer-2.52e03342.png" alt="" />
                             <h3>Kashem Mia</h3>
                             <h4 className='text-muted'>Traveller</h4>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime aut ut voluptate dolorum nisi ducimus ratione</p>
+                            <p>Apart from Scotlands landmark, the Old Man of Storr, the Quiraing is a must for anyone who visits Isle of Skye; especially if you’re a travel photographer!</p>
                         </div>
                     </div>
                 </div>
