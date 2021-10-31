@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import burjKhalifa from '../../../images/burj-khalifa.jpg'
 
 const SingleService = () => {
@@ -10,7 +11,10 @@ const SingleService = () => {
                     <div class="card-body">
                         <h5 class="card-title">Service Name</h5>
                         <p class="card-text">Short Description :: This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <button className='btn btn-primary w-100'>Book Now</button>
+
+                        <Link to="/book-now">
+                            <button className='btn btn-primary w-100'>Book Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>
