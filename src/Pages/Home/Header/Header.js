@@ -13,7 +13,7 @@ const Header = () => {
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <NavLink class="navbar-brand fw-bolder" to="/">SpicyX Tour</NavLink>
+                    <NavLink class="navbar-brand" to="/"><h1 className=' fw-bolder lh-1 '>SpicyX Tourism</h1></NavLink>
                     <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style={{ textDecoration: 'none' }}>
                             <li class="nav-item">
