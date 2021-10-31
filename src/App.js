@@ -26,19 +26,19 @@ function App() {
 					<Route path='/login'>
 						<Login></Login>
 					</Route>
-					<PrivateRoute path="/book-now">
+					<PrivateRoute path="/book-now/:packageId">
 						<BookNow></BookNow>
 					</PrivateRoute>
 
-					<Route path="/my-packages">
+					<PrivateRoute path="/my-packages">
 						<MyPackages></MyPackages>
-					</Route>
-					<Route path="/manage-packages">
+					</PrivateRoute>
+					<PrivateRoute path="/manage-packages">
 						<AllBookedPackages></AllBookedPackages>
-					</Route>
-					<Route path="/add-package">
+					</PrivateRoute>
+					<PrivateRoute path="/add-package">
 						<AddPackage></AddPackage>
-					</Route>
+					</PrivateRoute>
 
 					<Route path='*'>
 						<NotFound></NotFound>
