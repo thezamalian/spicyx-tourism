@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SingleService from '../SingleService/SingleService';
 
-const services = [
+/* const services = [
     {
         name: "Family Tour",
         image: "https://i.ibb.co/Y7wvvq3/img-card-12.jpg",
@@ -33,9 +33,20 @@ const services = [
         image: "https://i.ibb.co/w44MyvG/img-card-8.jpg",
         detail: "Honeymoon destination ideas for a once-in-a-lifetime escape. ... Tom Merchant is the co-founder of luxury travel company and trip planner."
     },
-]
+] */
 
 const Services = () => {
+    const [services, setServices] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/packages')
+            .then(res => res.json())
+            .then(data => {
+                setServices(data);
+                console.log(data);
+            })
+    }, []);
+
     return (
         <div className='mt-5 mx-3'>
             <h2 className='mb-3 '>Best Packages for You</h2>

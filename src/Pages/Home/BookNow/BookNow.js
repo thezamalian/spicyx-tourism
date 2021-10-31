@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
-import burjKhalifa from '../../../images/burj-khalifa.jpg'
+import nature from '../../../images/nat-1-large.jpg'
 
 
 const BookNow = () => {
@@ -18,7 +18,7 @@ const BookNow = () => {
 
                     <div className=" rounded-5 shadow-lg"  >
                         <div className="d-flex flex-column  h-100 p-3 pb-3  text-shadow-1">
-                            <img width="200px" className='img-fluid mx-auto' src={burjKhalifa} alt="" />
+                            <img width="200px" className='img-fluid mx-auto' src={nature} alt="" />
                             <h3>Service Name</h3>
                             <h4 className='text-muted'>Traveller</h4>
                             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid maxime aut ut voluptate dolorum nisi ducimus ratione</p>
