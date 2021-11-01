@@ -5,6 +5,7 @@ import useFirebase from '../../hooks/useFirebase';
 const PrivateRoute = ({ children, ...rest }) => {
     const { user, isLoading } = useFirebase();
 
+    // Loading spinner for a nice UX system
     if (isLoading) {
         return <div className="spinner-border text-danger" role="status">
             <span className="visually-hidden">Loading...</span>

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useParams } from 'react-router-dom';
 import useFirebase from '../../../hooks/useFirebase';
-import nature from '../../../images/nat-1-large.jpg'
 
 
 const BookNow = () => {
@@ -11,22 +10,25 @@ const BookNow = () => {
     const [pack, setPack] = useState({});
     const { packageId } = useParams();
 
+    // Loading a single element just with it's ID
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${packageId}`)
+        fetch(`https://grisly-barrow-77099.herokuapp.com/packages/${packageId}`)
             .then(res => res.json())
             .then(data => {
                 setPack(data);
-                console.log(data);
+                // console.log(data);
             })
     }, []);
     const { name, image, detail } = pack;
 
     const onSubmit = data => {
         const bookedPack = { name, image, detail };
+        bookedPack.isPending = true;
         bookedPack.user = data;
-        console.log(data, bookedPack);
+        // console.log(data, bookedPack);
 
-        fetch('http://localhost:5000/packages', {
+        // posting a new booked package with user information
+        fetch('https://grisly-barrow-77099.herokuapp.com/manage-packages', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

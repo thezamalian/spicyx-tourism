@@ -1,6 +1,7 @@
 import React from 'react';
 
 const UserReview = () => {
+    // a hard-coded user review section with nice background 
     return (
         <div>
             <h2 className='mb-3 '>What Travellers Say About Us</h2>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 ;
 
 const SingleService = ({ service }) => {
+    // showing a single service rendered by all-service & home compo
     const { _id, name, image, detail } = service;
 
     return (

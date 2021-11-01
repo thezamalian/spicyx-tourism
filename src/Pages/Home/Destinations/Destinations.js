@@ -5,6 +5,7 @@ import des2 from '../../../images/nat-2-large.jpg'
 import des3 from '../../../images/nat-3-large.jpg'
 
 const Destinations = () => {
+    // just the BS card system is used with local images
     return (
         <div>
 

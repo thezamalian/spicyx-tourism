@@ -6,6 +6,7 @@ import Subscribe from '../Subscribe/Subscribe';
 import UserReview from '../UserReview/UserReview';
 
 const Home = () => {
+    // Home component is organized with all of its sections
     return (
         <div>
             <Banner></Banner>

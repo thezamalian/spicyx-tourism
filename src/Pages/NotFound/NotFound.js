@@ -14,6 +14,7 @@ const NotFound = () => {
                 </p>
             </div>
             <div>
+                {/* from google's 404 image! FUN right?  */}
                 <img src="https://www.google.com/images/errors/robot.png" alt="" />
             </div>
         </div>

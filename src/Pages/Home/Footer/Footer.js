@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    // a simple footer but it is not active as it should be
     return (
         <div>
 

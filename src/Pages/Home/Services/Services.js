@@ -38,12 +38,13 @@ import SingleService from '../SingleService/SingleService';
 const Services = () => {
     const [services, setServices] = useState([]);
 
+    // loading all the packages to show them on the UI
     useEffect(() => {
-        fetch('http://localhost:5000/packages')
+        fetch('https://grisly-barrow-77099.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => {
                 setServices(data);
-                console.log(data);
+                // console.log(data);
             })
     }, []);
 
@@ -54,7 +55,7 @@ const Services = () => {
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
                 {
-                    services.map(service => <SingleService key={service.name} service={service} ></SingleService>)
+                    services.map(service => <SingleService key={service._id} service={service} ></SingleService>)
                 }
 
             </div>

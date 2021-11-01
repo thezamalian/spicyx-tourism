@@ -3,25 +3,26 @@ import initializeAuth from "../Firebase/firebase.init";
 import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
 
 initializeAuth();
+// firebase auth system has been initialized
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
     // const [error, setError] = useState('');
     const [isLoading, setIsLoading] = useState(true);
 
-    const auth = getAuth();
+    const auth = getAuth(); // google auth
     const googleProvider = new GoogleAuthProvider();
 
 
     const handleGoogleSignIn = () => {
         setIsLoading(true);
+        // returning the sign in method for redirection system
         return signInWithPopup(auth, googleProvider);
-
-
     };
 
 
     useEffect(() => {
+        // to watch the state change
         const unsubscribed = onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
@@ -37,7 +38,7 @@ const useFirebase = () => {
             setIsLoading(false);
         });
         return () => unsubscribed;
-    }, [])
+    }, []);
 
     const logOut = () => {
         setIsLoading(true);
@@ -48,6 +49,7 @@ const useFirebase = () => {
             })
     };
 
+    // returning everything we need to use in other files
     return {
         user,
         // error,

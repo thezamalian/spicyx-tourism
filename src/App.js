@@ -10,11 +10,13 @@ import AddPackage from './Pages/Packages/AddPackage/AddPackage';
 import AllBookedPackages from './Pages/Packages/AllBookedPackages/AllBookedPackages';
 import MyPackages from './Pages/Packages/MyPackages/MyPackages';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+// all required files and components has been imported
 
 function App() {
 	return (
 		<div className="App">
 			<Router>
+				{/* header & footer components are outside the Switch method */}
 				<Header></Header>
 				<Switch>
 					<Route exact path='/'>

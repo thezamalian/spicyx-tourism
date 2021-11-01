@@ -4,6 +4,7 @@ import bannerVan from '../../../images/travel-van.jpg'
 import bannerSun from '../../../images/plane-sun.jpg'
 
 const Banner = () => {
+    // carousel system has been used instead of just a banner
     return (
         <div className='banner-container' >
 
